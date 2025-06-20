@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Recommendations</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .thumbnail {
+      height: 150px;
+      background: #ccc;
+    }
+    .content {
+      padding: 1rem;
+    }
+    .title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h2>Recommended for You</h2>
+  <div class="video-grid">
+    <div class="card">
+      <div class="thumbnail"></div>
+      <div class="content">
+        <div class="title">Top 5 Programming Languages to Learn</div>
+        <div class="meta">FutureCoders · 10M views · 3 months ago</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail"></div>
+      <div class="content">
+        <div class="title">Build a Password Generator with React</div>
+        <div class="meta">FutureCoders · 10M views · 3 months ago</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail"></div>
+      <div class="content">
+        <div class="title">Bella Ciao | Money Heist</div>
+        <div class="meta">Netflix · 10M views · 11 months ago</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail"></div>
+      <div class="content">
+        <div class="title">Don't Ever Give Up – Elon Musk</div>
+        <div class="meta">Chispa Motivation · 10M views · 1 month ago</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail"></div>
+      <div class="content">
+        <div class="title">15 JavaScript Projects Full Course</div>
+        <div class="meta">CodeTuts · 8M views · 5 months ago</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail"></div>
+      <div class="content">
+        <div class="title">AI Face Detection</div>
+        <div class="meta">AI Labs · 5M views · 2 weeks ago</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

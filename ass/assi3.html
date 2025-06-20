@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef2f5;
+      margin: 0;
+      padding: 2rem;
+    }
+    .form-wrapper {
+      max-width: 750px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem 3rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .gender-group, .hobbies-group {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    .gender-group label,
+    .hobbies-group label {
+      font-weight: normal;
+    }
+    button {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 0.8rem;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-wrapper">
+    <h2>Create Account</h2>
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" required>
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+
+      <label>Gender</label>
+      <div class="gender-group">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </div>
+
+      <label for="source">Source of Income</label>
+      <input type="text" id="source">
+
+      <label>Hobbies</label>
+      <div class="hobbies-group">
+        <label><input type="checkbox" name="hobby"> Reading</label>
+        <label><input type="checkbox" name="hobby"> Sports</label>
+        <label><input type="checkbox" name="hobby"> Coding</label>
+      </div>
+
+      <label for="income">Income</label>
+      <input type="number" id="income">
+
+      <label for="age">Age</label>
+      <input type="number" id="age">
+
+      <label for="profile">Upload Profile Picture</label>
+      <input type="file" id="profile">
+
+      <label for="bio">Bio</label>
+      <textarea id="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+      <button type="submit">Create Account</button>
+    </form>
+  </div>
+</body>
+</html>
